@@ -18,6 +18,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <ThirdwebProvider desiredChainId={ChainId.Mumbai}
+  activeChain={'mumbai'}
   supportedWallets={[
     metamaskWallet(),
     coinbaseWallet(),
