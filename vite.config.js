@@ -8,7 +8,7 @@ export default defineConfig({
     global: "globalThis",
     "process.env": {},
   },
-  build:{
-    outDir: "build"
-  }
+  resolve: {
+    alias: [{ find: "@", replacement: "/src" }],
+}
 });
