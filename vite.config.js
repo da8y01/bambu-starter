@@ -8,7 +8,11 @@ export default defineConfig({
     global: "globalThis",
     "process.env": {},
   },
-  resolve: {
-    alias: [{ find: "@", replacement: "/src" }],
+  build: {
+    rollupOptions: {
+      external: [
+        /^node:.*/,
+      ]
+    }
 }
 });
