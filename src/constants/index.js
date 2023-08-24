@@ -4,12 +4,12 @@ export const navlinks = [
   {
     name: 'home',
     imgUrl: home,
-    link: '/home',
+    link: '/',
   },
   {
     name: 'dashboard',
     imgUrl: dashboard,
-    link: '/',
+    link: '/campaigns',
   },
   {
     name: 'campaign',
