@@ -1805,7 +1805,7 @@
     form-data "^4.0.0"
     uuid "^9.0.0"
 
-"@thirdweb-dev/wallets@1.1.18":
+"@thirdweb-dev/wallets@1.1.18", "@thirdweb-dev/wallets@^1.1.18":
   version "1.1.18"
   resolved "https://registry.yarnpkg.com/@thirdweb-dev/wallets/-/wallets-1.1.18.tgz#55caa247e9ba32d6054d571696c2eb1ba1d0787f"
   integrity sha512-1Cd3sVygSqLpGX+iZ6bkyfkzyh/iCR3ye+lmS/gTr8WrPoxBMwy19123q/2Xxc1Oj5y63lIV89RLEghEKLNPGQ==
