@@ -11,6 +11,16 @@ const CreateCampaign = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
   const { createCampaign } = useStateContext();
+  const [typeCampaign, setTypeCampaign] = useState('normal')
+  const [formCampaignWithRoadmap, setFormcampaignWithRoadmap] = useState({
+    name: '',
+    title: '',
+    video:'',
+    description: '',
+    target: '', 
+    deadline: '',
+    image: ''
+  });
   const [form, setForm] = useState({
     name: '',
     title: '',
@@ -44,8 +54,11 @@ const CreateCampaign = () => {
     <div className="bg-[#1c1c24] flex justify-center items-center flex-col rounded-[10px] sm:p-10 p-4">
       {isLoading && <Loader />}
       <div className="flex justify-center items-center p-[16px] sm:min-w-[380px] bg-[#3a3a43] rounded-[10px]">
-        <h1 className="font-epilogue font-bold sm:text-[25px] text-[18px] leading-[38px] text-white">Start a Campaign</h1>
-      </div>
+        {!typeCampaign=='normal'?
+          <h1 className="font-epilogue font-bold sm:text-[25px] text-[18px] leading-[38px] text-white">Start a Campaign</h1>
+:          <h1 className="font-epilogue font-bold sm:text-[25px] text-[18px] leading-[38px] text-white">Start a Campaign With Roadmap</h1>
+  }
+          </div>
 
       <form onSubmit={handleSubmit} className="w-full mt-[65px] flex flex-col gap-[30px]">
         <div className="flex flex-wrap gap-[40px]">
